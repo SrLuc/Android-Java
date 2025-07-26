@@ -12,6 +12,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SegundaActivity extends AppCompatActivity {
 
+    private Button btnProxima;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +27,14 @@ public class SegundaActivity extends AppCompatActivity {
 
 
         Button button = findViewById(R.id.prevPage);
-
         button.setOnClickListener(v -> {
             Intent intent = new Intent(SegundaActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        btnProxima = findViewById(R.id.NextPage);
+        btnProxima.setOnClickListener(v -> {
+            Intent intent = new Intent(SegundaActivity.this,PermissionActivity.class);
             startActivity(intent);
         });
 
