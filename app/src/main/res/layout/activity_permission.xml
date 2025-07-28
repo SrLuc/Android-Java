@@ -37,11 +37,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Permissão da Câmera"
+        android:text="Abrir Câmera"
         android:backgroundTint="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnAnterior" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewFoto"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/btnPermissao"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
